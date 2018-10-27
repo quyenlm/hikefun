@@ -1,0 +1,93 @@
+.product-thumb {
+    padding:1px;
+    position: relative;
+    &:before {
+        @include opacity(0);
+        @include transition (all .35s ease 0s);
+    }
+    .group-action {
+        @include transition (all .35s ease 0s);
+        @include opacity(0);
+        @media(min-width:$screen-sm-max){
+            @include transform (translateY(-10px));
+        }
+        
+    } 
+
+    .pav-quickview,
+    .carousel-controls-v1{
+        @include opacity(0);
+        @include transition (all .35s ease 0s);
+    }
+    
+    &:hover, .product-layout:hover & {
+        &:before {
+            @include opacity(1);
+            @include transition (all .35s ease 0s);
+           
+        }
+        .group-action {
+            @include opacity(1);
+            @include transform (translateY(-1px));
+        }  
+        .pav-quickview,
+        .carousel-controls-v1 {
+            @include opacity(1);
+            @include transition (all .35s ease 0s);
+            display: block;
+        }
+    }
+}
+
+.banner-image,
+.post-item .thumb,
+.related-thumb {
+    @extend .effect-v10;
+}
+
+.product-layout-default {
+    .image {
+        img {
+            -webkit-transition: opacity .5s ease,transform 2s cubic-bezier(0,0,.44,1.18);
+            -webkit-transition: opacity .5s ease,-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+            transition: opacity .5s ease,-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+            transition: opacity .5s ease,transform 2s cubic-bezier(0,0,.44,1.18);
+            transition: opacity .5s ease,transform 2s cubic-bezier(0,0,.44,1.18),-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+           
+        }
+        &:after {
+            position: absolute; 
+            top: 0;
+            left: 0;
+            z-index: 2;
+            content: "";
+            width: 100%;
+            height: 100%;
+            pointer-events: none;   
+            background-size: 200%;            
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            -webkit-animation: hoverGradient 7s infinite;
+            animation: hoverGradient 7s infinite;
+            @include opacity(0);
+        }
+    }
+}
+
+@media (min-width: $screen-md){
+    .product-layout-default {
+        .image{
+            overflow: hidden;
+        }
+         &:hover, .product-layout:hover & {
+             .image {
+                img {
+                    @include transform(scale(1.1));
+                }
+                &:after {
+                   @include opacity(1); 
+                }
+            }
+         }
+    }   
+}

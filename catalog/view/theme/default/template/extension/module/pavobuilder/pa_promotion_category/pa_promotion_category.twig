@@ -1,0 +1,30 @@
+{% set id = random(1..9) + random() %}
+<div class="pavo-widget-promotions-category {{ settings.extra_class ? [ ' ', settings.extra_class ] | join() : '' }}">
+	{% if settings.title_promo %}<h3 class="content-title">{{ settings.title_promo }}</h3>{% endif %}
+	{% if settings.subtitle_promo %}<div class="content-subtitle">{{ settings.subtitle_promo }}</div>{% endif %}
+	<div class="inner row">
+		<div class="promo-category col-md-3">
+			<ul class="nav nav-tabs nav-stacked" id="promotions-category{{id}}">
+				{% for key, category in settings.get_item %}
+					<li>
+						<a href="#tab{{ category.category_id }}{{id}}" data-toggle="tab">{{ category.category_name }}</a>	
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="tab-content col-md-9">
+			{% for banner in settings.get_item %}
+				<div class="promo-banner tab-pane fade" id="tab{{ banner.category_id }}{{id}}">
+					<div class="banner-image">
+						<img src="{{ banner.category_image }}" alt="{{ banner.category_name }}" class="img-responsive" />
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<script>
+	$(function () {
+		$('#promotions-category{{id}} a:first').tab('show');
+	});
+</script>

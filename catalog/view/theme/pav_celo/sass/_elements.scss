@@ -1,0 +1,1694 @@
+/**
+ * Override
+ */
+
+ .mfp-iframe-holder .mfp-content {
+ 	max-width: 80%!important;
+ }
+
+
+ /****/
+
+ .bg-light {
+ 	background: #f2f2f2;
+ }
+
+ .col-nopadding {
+ 	.row {
+ 		margin-left: 0;
+ 		margin-right: 0;
+ 		[class*="col-"] {
+ 			padding-left: 0;
+ 			padding-right: 0;
+ 		}
+ 	}
+ }
+
+ .no-padding {
+ 	padding: 0;
+ }
+
+ .no-margin {
+ 	margin: 0;
+ }
+ button{
+ 	outline: none;
+ }
+ *{
+ 	outline: none;
+ 	
+ }
+ .nopadding [class*="col-"],
+ .nopadding [class^="col-"] {
+ 	padding-right: 0;
+ 	padding-left: 0;
+ }
+
+ /**/
+
+
+ /* Helper classes*/
+
+
+ /* --------------------------------------------------*/
+
+ .border-top {
+ 	border-top: 1px solid $border-color;
+ }
+
+ .border-style {}
+
+ .border-base {
+ 	border: 1px solid $border-color;
+ }
+
+ .noborder {
+ 	border: none;
+ }
+
+ .z-index {
+ 	position: relative;
+ 	z-index: 1000;
+ }
+
+ .pavo-widget-button {
+ 	.btn-theme-white {
+ 		background: #FFF;
+ 		&:hover {
+ 			background: $brand-primary;
+ 			color: #fff;
+ 		}
+ 	}
+ }
+
+ .bg-size {
+ 	-webkit-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+ }
+
+ .pa_gallery_element {
+ 	.swiper-pager {
+ 		@media(min-width: $screen-sm-max) {
+ 			display: none;
+ 		}
+ 	}
+ }
+
+ .position-static {
+ 	position: static;
+ }
+
+ .color-h {
+ 	.margin-0 {
+ 		.content-heading {
+ 			color: #fff;
+ 		}
+ 	}
+ }
+
+
+ /* Border radius*/
+
+ .radius-x {
+ 	border-radius: 50% !important;
+ }
+
+ @for $i from 0 through 20 {
+ 	.border-width-#{$i} {
+ 		border-width: 1px * $i;
+ 	}
+ }
+
+ @for $i from 0 through 20 {
+ 	.radius-#{$i} {
+ 		border-radius: 1px * $i;
+ 	}
+ }
+
+
+ /* margin top*/
+
+ @for $i from -200 through 200 {
+ 	.margin-#{$i} {
+ 		margin: 1px * $i;
+ 	}
+ 	.margin-top-#{$i} {
+ 		margin-top: 1px * $i;
+ 	}
+ 	.margin-bottom-#{$i} {
+ 		margin-bottom: 1px * $i;
+ 	}
+ 	.margin-left-#{$i} {
+ 		margin-left: 1px * $i;
+ 	}
+ 	.margin-right-#{$i} {
+ 		margin-right: 1px * $i;
+ 	}
+ }
+
+
+ /* Min height*/
+
+ @for $i from 0 through 200 {
+ 	.min-height-#{$i * 100} {
+ 		min-height: 1px * $i * 100;
+ 	}
+ }
+
+
+ /* Min height*/
+
+ @for $i from 0 through 200 {
+ 	.height-#{$i * 100} {
+ 		height: 1px * $i * 100;
+ 	}
+ }
+
+
+ /* Min width*/
+
+ @for $i from 0 through 200 {
+ 	.min-width-#{$i * 10} {
+ 		min-width: 1px * $i * 10;
+ 	}
+ }
+
+
+ /* padding*/
+
+ @for $i from 0 through 50 {
+ 	.padding-#{$i} {
+ 		padding: 1px * $i
+ 	}
+ 	.padding-top-#{$i} {
+ 		padding-top: 1px * $i
+ 	}
+ 	.padding-bottom-#{$i} {
+ 		padding-bottom: 1px * $i
+ 	}
+ 	.padding-left-#{$i} {
+ 		padding-left: 1px * $i
+ 	}
+ 	.padding-right-#{$i} {
+ 		padding-right: 1px * $i
+ 	}
+ }
+
+
+ /* top*/
+
+ @for $i from -10 through 10 {
+ 	.top-#{$i} {
+ 		top: 1px * $i !important
+ 	}
+ 	.bottom-#{$i} {
+ 		bottom: 1px * $i !important
+ 	}
+ 	.left-#{$i} {
+ 		left: 1px * $i !important
+ 	}
+ 	.right-#{$i} {
+ 		right: 1px * $i !important
+ 	}
+ }
+
+
+ /* 5 column*/
+
+ .btn-theme-default {
+ 	@include button-variant-outline( $white, $warning, $warning, $white, $gray, $gray);
+ 	padding-left: 40px;
+ 	padding-right: 40px;
+ }
+
+ .btn-theme-second {
+ 	@include button-variant-outline($gray, $gray-lighter, $gray-lighter, $white, $warning, $warning);
+ }
+
+ .btn-inverse {
+ 	@include button-variant($theme-color, transparent, transparent);
+ }
+
+ .btn-lighten {
+ 	@include button-variant(#fff, transparent, #fff);
+ }
+
+
+ /*text*/
+
+ .text-white {
+ 	color: $white;
+ }
+
+
+ /*background*/
+
+ .bg-strong-blue {
+ 	background: #277ec2;
+ }
+
+ .bg-soft-orange {
+ 	background: #f9ad81;
+ }
+
+ .bg-green {
+ 	background: #3cb878;
+ }
+
+ .green {
+ 	color: #6fa66f;
+ }
+
+ .bg-pink {
+ 	background: #f26d7d;
+ }
+
+
+ /******************** CORE CUSTOM *********************/
+
+
+ /*Flex*/
+
+ .display-flex {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	align-items: center;
+ }
+
+ .effect-dropdown-menu {
+ 	> .dropdown-menu {
+ 		display: block;
+ 		visibility: hidden;
+ 		pointer-events: none;
+ 		margin: 0;
+ 		border: 0;
+ 		@include opacity(0);
+ 		@include transition (all .35s ease 0s);
+ 	}
+ 	&:hover > .dropdown-menu {
+ 		-webkit-transform: translate3d(0, 0, 0);
+ 		transform: translate3d(0, 0, 0);
+ 		visibility: visible;
+ 		pointer-events: visible;
+ 		@include opacity(1);
+ 	}
+ }
+
+
+ /*** Swiper viewport ***/
+
+
+ /* CSS Document */
+
+ .swiper-viewport {
+ 	background: #fff;
+ 	z-index: 1;
+ 	width: 100%;
+ 	position: relative;
+ 	overflow: visible;
+ 	margin: 0px;
+ 	box-shadow: none;
+ 	border-radius: 0;
+ 	border: none;
+ }
+
+
+ /* OpenCart Code */
+
+ .swiper-container {
+ 	direction: ltr !important;
+ 	@extend .col-nopadding;
+ }
+
+.tabs-productcarousel-content{
+	 .swiper-pager {
+ 	position: absolute;
+ 	line-height: 25px;
+ 	top: 38%;
+ }
+}
+
+
+ .swiper-button-prev,
+ .swiper-button-next {
+ 	@include border-radius(0%);
+ 	@include size(40px, 40px);
+ 	@include transition(all .3s ease);
+ 	border: 1px solid #fff;
+ 	line-height: 40px;
+ 	text-align: center;
+ 	background-image: none !important;
+ 	background: #FFF;
+ 	&:before {
+ 		color: $gray-light;
+ 		tex-shadow: none;
+ 		z-index: 999;
+ 		background: $nocolor;
+ 		font-size: $font-size-base + 2;
+ 	}
+ 	&:hover {
+ 		background: $primary;
+ 		border-color: $primary;
+ 		&:before {
+ 			color: $white;
+ 		}
+ 	}
+ }
+
+ .swiper-button-prev {
+ 	right: 100%;
+ 	&:before {
+ 		content: "\f060";
+ 	}
+ }
+
+ .swiper-button-next {
+ 	&:before {
+ 		content: "\f061";
+ 	}
+ }
+
+ .swiper-button-next.swiper-button-disabled,
+ .swiper-button-prev.swiper-button-disabled {
+ 	@include opacity(0);
+ 	cursor: pointer;
+ 	pointer-events: auto;
+ }
+
+ .swiper-viewport {
+ 	.swiper-button-prev {
+ 		opacity: 0;
+ 		
+ 	}
+ 	.swiper-button-next {
+ 		opacity: 0;
+ 	}
+ }
+
+ .pavo-widget-product_carousel {
+ 	&:hover {
+ 		.swiper-button-next,
+ 		.swiper-button-prev {
+ 			opacity: 1;
+ 			overflow: visible;
+ 		}
+ 	}
+ 	.swiper-button-next,
+ 	.swiper-button-prev {
+ 		opacity: 0;
+ 		overflow: hidden;
+ 	}
+ }
+
+ .pa_latest_blogs_element {
+ 	.latestblogs {
+ 		padding-bottom: 50px;
+ 		@media(max-width:$screen-xs-max){
+ 			padding-bottom: 10px;
+ 		}
+ 	}
+ 	.swiper-pager {
+ 		.swiper-pagination-bullets {
+ 			bottom: -175px;
+ 			display: block;
+ 			@media(max-width:$screen-md-max){
+ 				bottom: -155px;
+ 			}
+ 			@media(max-width: $screen-sm-max) {
+ 				display: none;
+ 			}
+ 			.swiper-pagination-bullet {
+ 				background: #f7f7f7;
+ 				width: 12px;
+ 				height: 12px;
+ 				border-radius: 0px;
+ 				border: 1px solid #cccccc;
+ 				&.swiper-pagination-bullet-active {
+ 					background: $brand-primary;
+ 					border: 1px solid $brand-primary;
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+
+
+ /* Desktop */
+
+ @media (min-width: 768px) {}
+
+ .swiper-pagination {
+ 	display: none;
+ 	bottom: -40px;
+ 	left: 0;
+ 	text-align: center;
+ 	width: 100%;
+ }
+
+ .swiper-pagination-bullet {
+ 	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+ 	margin: 0 5px;
+ 	opacity: 1;
+ }
+
+ .swiper-pagination-bullet {
+ 	&:hover {
+ 		background: rgba(0, 0, 0, 0.7);
+ 	}
+ }
+
+ .swiper-pagination-bullet-active {
+ 	background: rgba(0, 0, 0, 0.9);
+ }
+.buttons{
+	input{
+		vertical-align: text-top;
+		&.btn {
+			vertical-align: middle;
+		}
+	}
+}
+
+ /****/
+
+ .well-primary {
+ 	border: solid 1px $border-color;
+ 	padding: 40px;
+ 	border-radius: 5px;
+ 	table tr:last-child {
+ 		font-size: $font-size-base + 10;
+ 		font-weight: bold;
+ 		td:last-child {
+ 			color: $primary;
+ 		}
+ 	}
+ }
+ .required{
+ 	.select2-container{
+ 		width: 100% !important;
+ 	}
+ }
+.addthis_default_style{
+	display: flex;
+}
+ .well-default {
+ 	border: solid 1px $border-color;
+ 	padding: 40px;
+ 	border-radius: 5px;
+ 	background: #fff;
+ 	.panel-default {
+ 		border: none;
+ 	}
+ 	.form-group > label,
+ 	.form-group > input,
+ 	label {
+ 	display: block;
+	width: 100%;
+	text-align: left;
+ 	}
+ 
+ 	.panel-default > .panel-heading {
+ 		background: #FFF;
+ 		font-weight: normal;
+ 		font-size: $font-size-base;
+ 		border-bottom-width: 3px;
+ 	}
+ }
+
+
+ /*! Select2 Bootstrap 3 CSS v1.4.6 | MIT License | github.com/t0m/select2-bootstrap-css */
+
+
+/**
+ * Reset Bootstrap 3 .form-control styles which - if applied to the
+ * original <select>-element the Select2-plugin may be run against -
+ * are copied to the .select2-container.
+ *
+ * 1. Overwrite .select2-container's original display:inline-block
+ *    with Bootstrap 3's default for .form-control, display:block;
+ *    courtesy of @juristr (@see https://github.com/fk/select2-bootstrap-css/pull/1)
+ */
+
+ .select2-container.form-control {
+ 	background: transparent;
+ 	box-shadow: none;
+ 	border: none;
+ 	display: block;
+ 	/* 1 */
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+
+/**
+ * Adjust Select2 inputs to fit Bootstrap 3 default .form-control appearance.
+ */
+
+ .select2-container .select2-choices .select2-search-field input,
+ .select2-container .select2-choice,
+ .select2-container .select2-choices {
+ 	background: none;
+ 	padding: 0;
+ 	border-color: #cccccc;
+ 	border-radius: 4px;
+ 	color: #555555;
+ 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 	background-color: white;
+ 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+ 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+ }
+
+ .select2-search input {
+ 	border-color: #cccccc;
+ 	border-radius: 0px;
+ 	color: #555555;
+ 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 	background-color: white;
+ 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+ 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+ }
+
+ .select2-container .select2-choices .select2-search-field input {
+ 	-webkit-box-shadow: none;
+ 	box-shadow: none;
+ }
+
+
+/**
+ * Adjust Select2 input heights to match the Bootstrap default.
+ */
+
+ .select2-container .select2-choice {
+ 	height: 34px;
+ 	line-height: 1.42857;
+ }
+
+
+/**
+ * Address Multi Select2's height which - depending on how many elements have been selected -
+ * may grown higher than their initial size.
+ */
+
+ .select2-container.select2-container-multi.form-control {
+ 	height: auto;
+ }
+
+
+/**
+ * Address Bootstrap 3 control sizing classes
+ * @see http://getbootstrap.com/css/#forms-control-sizes
+ */
+
+ .select2-container.input-sm .select2-choice,
+ .input-group-sm .select2-container .select2-choice {
+ 	height: 30px;
+ 	line-height: 1.5;
+ 	border-radius: 3px;
+ }
+
+ .select2-container.input-lg .select2-choice,
+ .input-group-lg .select2-container .select2-choice {
+ 	height: 46px;
+ 	line-height: 1.33333;
+ 	border-radius: 6px;
+ }
+
+ .select2-container-multi .select2-choices .select2-search-field input {
+ 	height: 32px;
+ }
+
+ .select2-container-multi.input-sm .select2-choices .select2-search-field input,
+ .input-group-sm .select2-container-multi .select2-choices .select2-search-field input {
+ 	height: 28px;
+ }
+
+ .select2-container-multi.input-lg .select2-choices .select2-search-field input,
+ .input-group-lg .select2-container-multi .select2-choices .select2-search-field input {
+ 	height: 44px;
+ }
+
+
+/**
+ * Adjust height and line-height for .select2-search-field amd multi-select Select2 widgets.
+ *
+ * 1. Class repetition to address missing .select2-chosen in Select2 < 3.3.2.
+ */
+
+ .select2-container-multi .select2-choices .select2-search-field input {
+ 	margin: 0;
+ }
+
+ .select2-chosen,
+ .select2-choice > span:first-child,
+ .select2-container .select2-choices .select2-search-field input {
+ 	padding: 6px 12px;
+ }
+
+ .input-sm .select2-chosen,
+ .input-group-sm .select2-chosen,
+ .input-sm .select2-choice > span:first-child,
+ .input-group-sm .select2-choice > span:first-child,
+ .input-sm .select2-choices .select2-search-field input,
+ .input-group-sm .select2-choices .select2-search-field input {
+ 	padding: 5px 10px;
+ }
+
+ .input-lg .select2-chosen,
+ .input-group-lg .select2-chosen,
+ .input-lg .select2-choice > span:first-child,
+ .input-group-lg .select2-choice > span:first-child,
+ .input-lg .select2-choices .select2-search-field input,
+ .input-group-lg .select2-choices .select2-search-field input {
+ 	padding: 10px 16px;
+ }
+
+ .select2-container-multi .select2-choices .select2-search-choice {
+ 	margin-top: 5px;
+ 	margin-bottom: 3px;
+ }
+
+ .select2-container-multi.input-sm .select2-choices .select2-search-choice,
+ .input-group-sm .select2-container-multi .select2-choices .select2-search-choice {
+ 	margin-top: 3px;
+ 	margin-bottom: 2px;
+ }
+
+ .select2-container-multi.input-lg .select2-choices .select2-search-choice,
+ .input-group-lg .select2-container-multi .select2-choices .select2-search-choice {
+ 	line-height: 24px;
+ }
+
+
+/**
+ * Adjust the single Select2's dropdown arrow button appearance.
+ *
+ * 1. For Select2 v.3.3.2.
+ */
+
+ .select2-container .select2-choice .select2-arrow,
+ .select2-container .select2-choice div {
+ 	border-left: none;
+ 	background: none;
+ }
+
+ .select2-dropdown-open .select2-choice .select2-arrow,
+ .select2-dropdown-open .select2-choice div {
+ 	border-left-color: transparent;
+ 	background: none;
+ }
+
+
+/**
+ * Adjust the dropdown arrow button icon position for the single-select Select2 elements
+ * to make it line up vertically now that we increased the height of .select2-container.
+ *
+ * 1. Class repetition to address missing .select2-chosen in Select2 v.3.3.2.
+ */
+
+ .select2-container .select2-choice .select2-arrow b,
+ .select2-container .select2-choice div b {
+ 	background-position: 0 3px;
+ }
+
+ .select2-dropdown-open .select2-choice .select2-arrow b,
+ .select2-dropdown-open .select2-choice div b {
+ 	background-position: -18px 3px;
+ }
+
+ .select2-container.input-sm .select2-choice .select2-arrow b,
+ .input-group-sm .select2-container .select2-choice .select2-arrow b,
+ .select2-container.input-sm .select2-choice div b,
+ .input-group-sm .select2-container .select2-choice div b {
+ 	background-position: 0 1px;
+ }
+
+ .select2-dropdown-open.input-sm .select2-choice .select2-arrow b,
+ .input-group-sm .select2-dropdown-open .select2-choice .select2-arrow b,
+ .select2-dropdown-open.input-sm .select2-choice div b,
+ .input-group-sm .select2-dropdown-open .select2-choice div b {
+ 	background-position: -18px 1px;
+ }
+
+ .select2-container.input-lg .select2-choice .select2-arrow b,
+ .input-group-lg .select2-container .select2-choice .select2-arrow b,
+ .select2-container.input-lg .select2-choice div b,
+ .input-group-lg .select2-container .select2-choice div b {
+ 	background-position: 0 9px;
+ }
+
+ .select2-dropdown-open.input-lg .select2-choice .select2-arrow b,
+ .input-group-lg .select2-dropdown-open .select2-choice .select2-arrow b,
+ .select2-dropdown-open.input-lg .select2-choice div b,
+ .input-group-lg .select2-dropdown-open .select2-choice div b {
+ 	background-position: -18px 9px;
+ }
+
+
+/**
+ * Address Bootstrap's validation states and change Select2's border colors and focus states.
+ * Apply .has-warning, .has-danger or .has-succes to #select2-drop to match Bootstraps' colors.
+ */
+
+ .has-warning .select2-choice,
+ .has-warning .select2-choices {
+ 	border-color: #8a6d3b;
+ }
+
+ .has-warning .select2-container-active .select2-choice,
+ .has-warning .select2-container-multi.select2-container-active .select2-choices {
+ 	border-color: #66512c;
+ 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+ 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+ }
+
+ .has-warning.select2-drop-active {
+ 	border-color: #66512c;
+ }
+
+ .has-warning.select2-drop-active.select2-drop.select2-drop-above {
+ 	border-top-color: #66512c;
+ }
+
+ .has-error .select2-choice,
+ .has-error .select2-choices {
+ 	border-color: #a94442;
+ }
+
+ .has-error .select2-container-active .select2-choice,
+ .has-error .select2-container-multi.select2-container-active .select2-choices {
+ 	border-color: #843534;
+ 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+ 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+ }
+
+ .has-error.select2-drop-active {
+ 	border-color: #843534;
+ }
+
+ .has-error.select2-drop-active.select2-drop.select2-drop-above {
+ 	border-top-color: #843534;
+ }
+
+ .has-success .select2-choice,
+ .has-success .select2-choices {
+ 	border-color: #3c763d;
+ }
+
+ .has-success .select2-container-active .select2-choice,
+ .has-success .select2-container-multi.select2-container-active .select2-choices {
+ 	border-color: #2b542c;
+ 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+ 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+ }
+
+ .has-success.select2-drop-active {
+ 	border-color: #2b542c;
+ }
+
+ .has-success.select2-drop-active.select2-drop.select2-drop-above {
+ 	border-top-color: #2b542c;
+ }
+
+
+/**
+ * Make Select2's active-styles - applied to .select2-container when the widget receives focus -
+ * fit Bootstrap 3's .form-element:focus appearance.
+ */
+
+ .select2-container-active .select2-choice,
+ .select2-container-multi.select2-container-active .select2-choices {
+ 	border-color: #66afe9;
+ 	outline: none;
+ 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+ 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+ 	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+ 	-o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+ 	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+ }
+
+ .select2-drop-active {
+ 	border-color: #66afe9;
+ }
+
+ .select2-drop-auto-width,
+ .select2-drop.select2-drop-above.select2-drop-active {
+ 	border-top-color: #66afe9;
+ }
+
+
+/**
+ * Select2 widgets in Bootstrap Input Groups
+ *
+ * When Select2 widgets are combined with other elements using Bootstrap 3's
+ * "Input Group" component, we don't want specific edges of the Select2 container
+ * to have a border-radius.
+ *
+ * In Bootstrap 2, input groups required a markup where these style adjustments
+ * could be bound to a CSS-class identifying if the additional elements are appended,
+ * prepended or both.
+ *
+ * Bootstrap 3 doesn't rely on these classes anymore, so we have to use our own.
+ * Use .select2-bootstrap-prepend and .select2-bootstrap-append on a Bootstrap 3 .input-group
+ * to let the contained Select2 widget know which edges should not be rounded as they are
+ * directly followed by another element.
+ *
+ * @see http://getbootstrap.com/components/#input-groups
+ */
+
+ .input-group.select2-bootstrap-prepend [class^="select2-choice"] {
+ 	border-bottom-left-radius: 0 !important;
+ 	border-top-left-radius: 0 !important;
+ }
+
+ .input-group.select2-bootstrap-append [class^="select2-choice"] {
+ 	border-bottom-right-radius: 0 !important;
+ 	border-top-right-radius: 0 !important;
+ }
+
+ .select2-dropdown-open [class^="select2-choice"] {
+ 	border-bottom-right-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+
+ .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
+ 	border-top-right-radius: 0 !important;
+ 	border-top-left-radius: 0 !important;
+ 	border-bottom-right-radius: 4px !important;
+ 	border-bottom-left-radius: 4px !important;
+ 	background: white;
+ 	filter: none;
+ }
+
+ .input-group.select2-bootstrap-prepend .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
+ 	border-bottom-left-radius: 0 !important;
+ 	border-top-left-radius: 0 !important;
+ }
+
+ .input-group.select2-bootstrap-append .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
+ 	border-bottom-right-radius: 0 !important;
+ 	border-top-right-radius: 0 !important;
+ }
+
+ .input-group.input-group-sm.select2-bootstrap-prepend .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
+ 	border-bottom-right-radius: 3px !important;
+ }
+
+ .input-group.input-group-lg.select2-bootstrap-prepend .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
+ 	border-bottom-right-radius: 6px !important;
+ }
+
+ .input-group.input-group-sm.select2-bootstrap-append .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
+ 	border-bottom-left-radius: 3px !important;
+ }
+
+ .input-group.input-group-lg.select2-bootstrap-append .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
+ 	border-bottom-left-radius: 6px !important;
+ }
+
+
+/**
+ * Adjust Select2's choices hover and selected styles to match Bootstrap 3's default dropdown styles.
+ */
+
+ .select2-results .select2-highlighted {
+ 	color: white;
+ 	background-color: #337ab7;
+ }
+
+
+/**
+ * Adjust alignment of Bootstrap 3 buttons in Bootstrap 3 Input Groups to address
+ * Multi Select2's height which - depending on how many elements have been selected -
+ * may grown higher than their initial size.
+ */
+
+ .select2-bootstrap-append .select2-container-multiple,
+ .select2-bootstrap-append .input-group-btn,
+ .select2-bootstrap-append .input-group-btn .btn,
+ .select2-bootstrap-prepend .select2-container-multiple,
+ .select2-bootstrap-prepend .input-group-btn,
+ .select2-bootstrap-prepend .input-group-btn .btn {
+ 	vertical-align: top;
+ }
+
+
+/**
+ * Make Multi Select2's choices match Bootstrap 3's default button styles.
+ */
+
+ .select2-container-multi .select2-choices .select2-search-choice {
+ 	color: #555555;
+ 	background: white;
+ 	border-color: #cccccc;
+ 	-webkit-box-shadow: none;
+ 	box-shadow: none;
+ }
+
+ .select2-container-multi .select2-choices .select2-search-choice-focus {
+ 	background: #ebebeb;
+ 	border-color: #adadad;
+ 	color: #333333;
+ 	-webkit-box-shadow: none;
+ 	box-shadow: none;
+ }
+
+
+/**
+ * Address Multi Select2's choice close-button vertical alignment.
+ */
+
+ .select2-search-choice-close {
+ 	margin-top: -7px;
+ 	top: 50%;
+ }
+
+
+/**
+ * Adjust the single Select2's clear button position (used to reset the select box
+ * back to the placeholder value and visible once a selection is made
+ * activated by Select2's "allowClear" option).
+ */
+
+ .select2-container .select2-choice abbr {
+ 	top: 50%;
+ }
+
+
+/**
+ * Adjust "no results" and "selection limit" messages to make use
+ * of Bootstrap 3's default "Alert" style.
+ *
+ * @see http://getbootstrap.com/components/#alerts-default
+ */
+
+ .select2-results .select2-no-results,
+ .select2-results .select2-searching,
+ .select2-results .select2-selection-limit {
+ 	background-color: #fcf8e3;
+ 	color: #8a6d3b;
+ }
+
+
+/**
+ * Address disabled Select2 styles.
+ *
+ * 1. For Select2 v.3.3.2.
+ * 2. Revert border-left:0 inherited from Select2's CSS to prevent the arrow
+ *    from jumping when switching from disabled to enabled state and vice versa.
+ */
+
+ .select2-container.select2-container-disabled .select2-choice,
+ .select2-container.select2-container-disabled .select2-choices {
+ 	cursor: not-allowed;
+ 	background-color: #eeeeee;
+ 	border-color: #cccccc;
+ }
+
+ .select2-container.select2-container-disabled .select2-choice .select2-arrow,
+ .select2-container.select2-container-disabled .select2-choice div,
+ .select2-container.select2-container-disabled .select2-choices .select2-arrow,
+ .select2-container.select2-container-disabled .select2-choices div {
+ 	background-color: transparent;
+ 	border-left: 1px solid transparent;
+ 	/* 2 */
+ }
+
+
+/**
+ * Address Select2's loading indicator position - which should not stick
+ * to the right edge of Select2's search input.
+ *
+ * 1. in .select2-search input
+ * 2. in Multi Select2's .select2-search-field input
+ * 3. in the status-message of infinite-scroll with remote data (@see http://ivaynberg.github.io/select2/#infinite)
+ *
+ * These styles alter Select2's default background-position of 100%
+ * and supply the new background-position syntax to browsers which support it:
+ *
+ * 1. Android, Safari < 6/Mobile, IE<9: change to a relative background-position of 99%
+ * 2. Chrome 25+, Firefox 13+, IE 9+, Opera 10.5+: use the new CSS3-background-position syntax
+ *
+ * @see http://www.w3.org/TR/css3-background/#background-position
+ *
+ * @todo Since both Select2 and Bootstrap 3 only support IE8 and above,
+ * we could use the :after-pseudo-element to display the loading indicator.
+ * Alternatively, we could supply an altered loading indicator image which already
+ * contains an offset to the right.
+ */
+
+ .select2-search input.select2-active,
+ .select2-container-multi .select2-choices .select2-search-field input.select2-active,
+ .select2-more-results.select2-active {
+ 	background-position: 99%;
+ 	/* 4 */
+ 	background-position: right 4px center;
+ 	/* 5 */
+ }
+
+
+/**
+ * To support Select2 pre v3.4.2 in combination with Bootstrap v3.2.0,
+ * ensure that .select2-offscreen width, height and position can not be overwritten.
+ *
+ * This adresses changes in Bootstrap somewhere after the initial v3.0.0 which -
+ * in combination with Select2's pre-v3.4.2 CSS missing the "!important" after
+ * the following rules - allow Bootstrap to overwrite the latter, which results in
+ * the original <select> element Select2 is replacing not be properly being hidden
+ * when used in a "Bootstrap Input Group with Addon".
+ **/
+
+ .select2-offscreen,
+ .select2-offscreen:focus {
+ 	width: 1px !important;
+ 	height: 1px !important;
+ 	position: absolute !important;
+ }
+
+
+ /* zoom **/
+
+
+ /* Compatibility styles for frameworks like bootstrap, foundation e.t.c */
+
+ .xzoom-source img,
+ .xzoom-preview img,
+ .xzoom-lens img {
+ 	display: block;
+ 	max-width: none;
+ 	max-height: none;
+ 	-webkit-transition: none;
+ 	-moz-transition: none;
+ 	-o-transition: none;
+ 	transition: none;
+ }
+
+
+ /* --------------- */
+
+
+ /* xZoom Styles below */
+
+ .xzoom-container {
+ 	display: inline-block;
+ }
+
+ .xzoom-thumbs {
+ 	text-align: center;
+ 	margin-bottom: 10px;
+ 	padding: 5px;
+ }
+
+
+ /* Thumbs */
+
+ .xzoom-gallery5 {
+ 	margin-left: 5px;
+ 	margin-bottom: 10px;
+ }
+
+ .xzoom-source,
+ .xzoom-hidden {
+ 	display: block;
+ 	position: static;
+ 	float: none;
+ 	clear: both;
+ }
+
+
+ /* Everything out of border is hidden */
+
+ .xzoom-hidden {
+ 	overflow: hidden;
+ }
+
+
+ /* Preview */
+
+ .xzoom-preview {
+ 	border: 1px solid $border-color;
+ 	background: #2f4f4f;
+ }
+
+
+ /* Lens */
+
+ .xzoom-lens {
+ 	border: 1px solid #555;
+ 	box-shadow: -0px -0px 10px rgba(0, 0, 0, 0.50);
+ 	cursor: crosshair;
+ }
+
+
+ /* Loading */
+
+ .xzoom-loading {
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	border-radius: 100%;
+ 	opacity: .7;
+ 	background: url(../images/xloading.gif);
+ 	width: 48px;
+ 	height: 48px;
+ }
+
+
+ /* Additional class that applied to thumb when it is active */
+
+ .xactive {
+ 	-webkit-box-shadow: 0px 0px 3px 0px rgba(74, 169, 210, 1);
+ 	-moz-box-shadow: 0px 0px 3px 0px rgba(74, 169, 210, 1);
+ 	box-shadow: 0px 0px 3px 0px rgba(74, 169, 210, 1);
+ 	border: 1px solid #4aaad2;
+ }
+
+
+ /* Caption */
+
+ .xzoom-caption {
+ 	position: absolute;
+ 	bottom: -43px;
+ 	left: 0;
+ 	background: #000;
+ 	width: 100%;
+ 	text-align: left;
+ }
+
+ .xzoom-caption span {
+ 	color: #fff;
+ 	font-family: Arial, sans-serif;
+ 	display: block;
+ 	font-size: 0.75em;
+ 	font-weight: bold;
+ 	padding: 10px;
+ }
+
+ .effect-v1 {
+ 	overflow: hidden;
+ 	img {
+ 		outline: transparent solid 15px;
+ 		outline-offset: 0px;
+ 		@include opacity(1);
+ 		@include transition (all 0.35s ease 0s);
+ 	}
+ 	&:hover {
+ 		img {
+ 			outline-color: rgba(0, 0, 0, 0.2);
+ 			outline-offset: -30px;
+ 		}
+ 	}
+ }
+
+
+ /* effect-v2*/
+
+ .effect-v2 {
+ 	background-color: #000;
+ 	overflow: hidden;
+ 	position: relative;
+ 	&:before {
+ 		border: 1px solid #ffffff;
+ 		bottom: 20px;
+ 		content: "";
+ 		left: 20px;
+ 		position: absolute;
+ 		right: 20px;
+ 		top: 20px;
+ 		@include translate3d (-20px, 0px, 0px);
+ 		@include opacity(0);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 		z-index: 1;
+ 	}
+ 	img {
+ 		@include scale (1, 1);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 	}
+ 	.action {
+ 		@include translate3d(-10px, 0px, 0px);
+ 		@include opacity(0);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 	}
+ 	/* style for hover */
+ 	&:hover {
+ 		&:before {
+ 			@include opacity(1);
+ 			@include translate3d(0px, 0px, 0px);
+ 		}
+ 		img {
+ 			@include opacity(0.7);
+ 			@include scale (1.2, 1);
+ 		}
+ 		.action {
+ 			@include translate3d(0px, 0px, 0px);
+ 			@include opacity(1);
+ 		}
+ 	}
+ }
+
+
+ /* effect-v3*/
+
+ .effect-v3 {
+ 	overflow: hidden;
+ 	position: relative;
+ 	&:before,
+ 	&:after {
+ 		bottom: 20px;
+ 		content: "";
+ 		left: 20px;
+ 		opacity: 0;
+ 		position: absolute;
+ 		right: 20px;
+ 		top: 20px;
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 		z-index: 1;
+ 	}
+ 	&:before {
+ 		border-bottom: 1px solid #ffffff;
+ 		border-top: 1px solid #ffffff;
+ 		@include scale(0, 1);
+ 	}
+ 	&:after {
+ 		border-left: 1px solid #ffffff;
+ 		border-right: 1px solid #ffffff;
+ 		@include scale(1, 0);
+ 	}
+ 	img {
+ 		@include opacity(1);
+ 		@include transition (opacity 0.35s ease 0s);
+ 	}
+ 	.banner-title {
+ 		@include translate3d(0px, -20px, 0px);
+ 		@include transition (transform 0.35s ease 0s);
+ 	}
+ 	.action {
+ 		@include opacity(0);
+ 		@include translate3d(0px, 40px, 0px);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 	}
+ 	&:hover {
+ 		&:before,
+ 		&:after {
+ 			@include opacity(1);
+ 			@include scale(1);
+ 		}
+ 		img {
+ 			@include opacity(0.5);
+ 		}
+ 		.banner-title,
+ 		.action {
+ 			@include opacity(1);
+ 			@include translate3d(0px, 0px, 0px);
+ 		}
+ 	}
+ }
+
+
+ /* effect-v4*/
+
+ .effect-v4 {
+ 	background-color: #000;
+ 	overflow: hidden;
+ 	position: relative;
+ 	&:before {
+ 		border: 2px solid #ffffff;
+ 		bottom: 20px;
+ 		@include box-shadow(0 0 0 30px rgba(255, 255, 255, 0.2));
+ 		content: "";
+ 		left: 20px;
+ 		opacity: 0;
+ 		position: absolute;
+ 		right: 20px;
+ 		top: 20px;
+ 		@include scale(1.4);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 		z-index: 1;
+ 	}
+ 	img {
+ 		@include scale (1, 1);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 	}
+ 	.banner-title {
+ 		@include scale(1);
+ 		@include transition (transform 0.35s ease 0s);
+ 	}
+ 	.action {
+ 		@include opacity(0);
+ 		@include scale(1.2);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 	}
+ 	&:hover {
+ 		&:before {
+ 			@include opacity(1);
+ 			@include scale(1);
+ 		}
+ 		img {
+ 			@include opacity(0.5);
+ 		}
+ 		.banner-title {
+ 			@include scale(0.95);
+ 		}
+ 		.action {
+ 			@include opacity(1);
+ 			@include scale(1);
+ 		}
+ 	}
+ }
+
+
+ /* effect-v5*/
+
+ .effect-v5 {
+ 	background-color: #000;
+ 	overflow: hidden;
+ 	position: relative;
+ 	img {
+ 		@include scale (1, 1);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 	}
+ 	.action {
+ 		-webkit-transform: translate3d(-150%, 0px, 0px);
+ 		transform: translate3d(-150%, 0px, 0px);
+ 		@include transition (opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 		&:first-child {
+ 			@include transition-delay(0.15s);
+ 		}
+ 		&:nth-of-type(2) {
+ 			@include transition-delay (0.1s);
+ 		}
+ 		&:nth-of-type(3) {
+ 			@include transition-delay (0.05s);
+ 		}
+ 	}
+ 	&:hover {
+ 		img {
+ 			@include opacity(0.5);
+ 			-webkit-transform: scale3d(1.1, 1.1, 1);
+ 			transform: scale3d(1.1, 1.1, 1);
+ 		}
+ 		.action {
+ 			@include opacity(1);
+ 			-webkit-transform: scale3d(1.1, 1.1, 1);
+ 			transform: scale3d(1.1, 1.1, 1);
+ 			-webkit-transform: translate3d(0px, 0px, 0px);
+ 			transform: translate3d(0px, 0px, 0px);
+ 			&:first-child {
+ 				@include transition-delay (0s);
+ 			}
+ 			&:nth-of-type(2) {
+ 				@include transition-delay (0.05s);
+ 			}
+ 			&:nth-of-type(3) {
+ 				@include transition-delay (0.1s);
+ 			}
+ 		}
+ 	}
+ }
+
+
+ /* effect-v6*/
+
+ .effect-v6 {
+ 	background-color: #000;
+ 	overflow: hidden;
+ 	position: relative;
+ 	img {
+ 		@include scale (1, 1);
+ 		@include opacity(0.8);
+ 		@include transition( opacity 0.5s ease 0s, transform 0.35s ease 0s);
+ 	}
+ 	.action {
+ 		-webkit-transform: translate3d(0px, -100px, 0px);
+ 		transform: translate3d(0px, -100px, 0px);
+ 		-webkit-transition: opacity 0.35s ease 0s, -webkit-transform 0.35s ease 0s;
+ 		transition: opacity 0.35s ease 0s, -webkit-transform 0.35s ease 0s;
+ 		transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+ 		transition: opacity 0.35s ease 0s, transform 0.35s ease 0s, -webkit-transform 0.35s ease 0s;
+ 		opacity: 0;
+ 	}
+ 	&:hover {
+ 		img {
+ 			@include opacity(0.9);
+ 		}
+ 		.action {
+ 			opacity: 1;
+ 			-webkit-transform: translate3d(0px, 0px, 0px);
+ 			transform: translate3d(0px, 0px, 0px);
+ 		}
+ 	}
+ }
+
+
+ /* effect-v7*/
+
+ .effect-v7 {
+ 	overflow: hidden;
+ 	position: relative;
+ 	&:before {
+ 		bottom: 0;
+ 		content: "";
+ 		left: 0;
+ 		position: absolute;
+ 		right: 0;
+ 		top: 0;
+ 		@include transition(all 0.4s cubic-bezier(0.94, 0.85, 0.1, 0.62) 0s);
+ 		z-index: 1;
+ 		border: 200px double rgba(0, 0, 0, 0);
+ 		@include opacity(1);
+ 		visibility: visible;
+ 	}
+ 	&:hover {
+ 		&:before {
+ 			@include opacity(0);
+ 			border: 0 double rgba(255, 255, 255, 0.7);
+ 			visibility: hidden;
+ 		}
+ 	}
+ }
+
+
+ /* effect-v8*/
+
+ .effect-v8 {
+ 	overflow: hidden;
+ 	position: relative;
+ 	&:before {
+ 		border-bottom: 50px solid rgba(255, 255, 255, 0.4);
+ 		border-top: 50px solid rgba(255, 255, 255, 0.4);
+ 		content: "";
+ 		height: 100%;
+ 		left: 0;
+ 		@include opacity(0);
+ 		position: absolute;
+ 		top: 0;
+ 		transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+ 		-o-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+ 		-webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+ 		-moz-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+ 		-ms-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+ 		@include transition (opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 		-webkit-transform-origin: 50% 50% 0;
+ 		transform-origin: 50% 50% 0;
+ 		width: 100%;
+ 	}
+ 	&:hover {
+ 		&:before {
+ 			@include opacity(1);
+ 			transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+ 			-o-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+ 			-webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+ 			-moz-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+ 			-ms-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+ 		}
+ 	}
+ }
+
+
+ /* effect-v9*/
+
+ .effect-v9 {
+ 	overflow: hidden;
+ 	position: relative;
+ 	&:before {
+ 		border: 50px solid rgba(0, 0, 0, 0);
+ 		@include border-top-radius (50px);
+ 		@include border-bottom-radius (50px);
+ 		-webkit-box-sizing: border-box;
+ 		box-sizing: border-box;
+ 		cursor: pointer;
+ 		display: inline-block;
+ 		left: 0;
+ 		right: 0;
+ 		bottom: 0;
+ 		margin: auto;
+ 		position: absolute;
+ 		top: 0;
+ 		content: "";
+ 		@include opacity (1);
+ 		@include size(100px, 100px);
+ 		@include scale(7);
+ 		@include transition (all 0.3s ease-in-out 0s);
+ 		visibility: visible;
+ 		z-index: 1;
+ 	}
+ 	&:hover {
+ 		&:before {
+ 			border: 0 solid rgba(0, 0, 0, 0.7);
+ 			@include opacity (0);
+ 			visibility: hidden;
+ 		}
+ 	}
+ }
+
+
+ /* effect-v10*/
+
+ .effect-v10 {
+ 	overflow: hidden;
+ 	&:hover img {}
+ }
+
+ @keyframes kenburns-top {
+ 	0% {
+ 		-webkit-transform: scale(1) translateY(0);
+ 		transform: scale(1) translateY(0);
+ 		-webkit-transform-origin: 50% 16%;
+ 		transform-origin: 50% 16%;
+ 	}
+ 	100% {
+ 		-webkit-transform: scale(1.25) translateY(-15px);
+ 		transform: scale(1.25) translateY(-15px);
+ 		-webkit-transform-origin: top;
+ 		transform-origin: top;
+ 	}
+ }
+
+
+ /* effect-v11*/
+
+ .effect-default {
+ 	background-color: #000;
+ 	overflow: hidden;
+ 	position: relative;
+ 	.banner-title {
+ 		@include translate3d(0px, 20px, 0px);
+ 		@include transition (transform 0.35s ease 0s);
+ 	}
+ 	img {
+ 		@include scale (1.15);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 		@include opacity (0.7);
+ 	}
+ 	.action {
+ 		@include scale (1.1);
+ 		@include opacity(0);
+ 		@include transition( opacity 0.35s ease 0s, transform 0.35s ease 0s);
+ 		border: 1px solid #fff;
+ 		margin: 1em 0 0;
+ 		padding: 1em;
+ 		color: $white;
+ 	}
+ 	&:hover {
+ 		&:before {
+ 			@include opacity(1);
+ 			@include scale (1);
+ 		}
+ 		img {
+ 			@include opacity(0.5);
+ 			@include scale (1);
+ 		}
+ 		.action {
+ 			@include scale (1);
+ 			@include opacity(1);
+ 		}
+ 		.banner-title {
+ 			@include opacity(1);
+ 			@include translate3d(0px, 0px, 0px);
+ 		}
+ 	}
+ }
+
+
+ /* --- Sass For product_slide --- */
+
+ .carousel-control {
+ 	&.right,
+ 	&.left {
+ 		background: transparent;
+ 	}
+ }
+
+ .carousel-controls-v1 {
+ 	width: 100%;
+ 	height: 50px;
+ 	position: absolute;
+ 	bottom: 0;
+ 	.carousel-control {
+ 		display: flex;
+ 		justify-content: center;
+ 		align-items: center;
+ 		padding: 0;
+ 		height: 30px;
+ 		width: 30px;
+ 		font-size: 13px;
+ 		background: transparent;
+ 		color: $carousel-control-color;
+ 		border: 2px solid $carousel-indicator-border-color;
+ 		@include border-radius(50%);
+ 		&:hover {
+ 			background: $brand-primary;
+ 			border-color: $brand-primary;
+ 		}
+ 	}
+ }
+
+
+ /*** text element***/
+
+ .list-group {
+ 	margin-bottom: 30px !important;
+ 	> li.list-group-item,
+ 	a.list-group-item {
+ 		margin-bottom: 0px;
+ 		@include border(0 0 1px 0 solid #ddd);
+ 		text-transform: uppercase;
+ 		font-size: $font-size-base - 3;
+ 		font-weight: bold;
+ 	}
+ 	.list-group-item {
+ 		border: none;
+ 	}
+ }
+
+ .panel-heading {
+ 	.panel-title {
+ 		font-family: $font-family-third;
+ 		font-size: $font-size-base + 8;
+ 	}
+ }
+ .alert-minimalist{
+ 	left: auto !important;
+ 	right: 20px;
+ 	z-index: 9999 !important;
+ 	.close{
+	 	top: 50%;
+	    position: absolute;
+	    right: 30px;
+	    transform: translateY(-50%);
+ 	}
+ }
+ .panel-cart-nextstep{
+ 	@media(max-width:$screen-xs){
+ 		padding: 40px 0px !important;
+ 		border: none !important;
+
+ 	}
+ }
+ #top-links{
+ 	.list-inline{
+ 		.dropdown-menu {
+ 			left: 0;
+right: auto;
+ 		}
+ 	}
+ }

@@ -1,0 +1,74 @@
+/**
+ * Advanded search
+ */
+
+$height: 45px !default;
+#pav-adv-search {
+    margin: $padding-small-vertical 0;
+    @include border-radius(30px);
+    position: relative;
+    background-color: $white;
+    border: 1px solid $border-color;
+    select {
+        display: none;
+    }
+    .select2-container .select2-selection--single {
+        height: $height;
+        border: solid 1px $border-color;
+        border-top-width: 0;
+        border-bottom-width: 0;
+        border-radius: 0;
+        border-left: 0;
+        font-site: $font-size-base - 2;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: $height;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: $height;
+        font-site: $font-size-base - 2;
+        color: $gray-light;
+    }
+    .categories-selection {
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+    input {
+        padding-left: 265px;
+        border: 0;
+        @include border-radius(30px);
+        height: $height;
+    }
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        border-radius: 0;
+        border: 0;
+        height: $height;
+        background-color: $warning;
+        color: $white;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+
+/**
+ * PopUp Search
+ */
+
+.pavo-popup-search {
+    position: relative;
+    &.active .popup-search-container {
+        display: block;
+    }
+    .popup-search-container {
+        display: none;
+        top: 0;
+        left: 0;
+    }
+}

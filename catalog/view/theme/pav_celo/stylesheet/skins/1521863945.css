@@ -6124,6 +6124,7 @@ footer.pavo-footer {
     color: #fff; }
   .wrap-right .btn-search-default {
     padding: 0px 17px;
+	padding-left: 0px;
     line-height: 40px; }
   .wrap-right .dropdown-menu {
     right: 0;
@@ -6301,10 +6302,10 @@ footer.pavo-footer {
     margin: 0;
     list-style: none; }
   .mainmenu .navbar .navbar-nav > li {
-    padding: 15px 20px; }
+    padding: 15px 6px; }
   @media (max-width: 1199px) {
       .mainmenu .navbar .navbar-nav > li {
-        padding: 15px 15px; } }
+        padding: 15px 6px; } }
   .mainmenu .navbar .navbar-nav > li > a {
     display: inline-block;
     padding-bottom: 10px !important;

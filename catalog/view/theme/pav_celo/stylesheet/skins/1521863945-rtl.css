@@ -6124,6 +6124,7 @@ footer.pavo-footer {
     color: #fff; }
   .wrap-right .btn-search-default {
     padding: 0px 17px;
+	padding-left: 0px;
     line-height: 40px; }
   .wrap-right .dropdown-menu {
     left: 0;
